@@ -1,0 +1,165 @@
+{
+  "dependencies": {
+     "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "comp-ie.css": {
+      "files": [
+        "styles/comp-ie.scss"
+      ]
+    },
+    "main.js": {
+      "files": [
+        "scripts/customization/main.js",
+        "scripts/customization/cost-formatter.js",
+        "scripts/customization/animated-button.js"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "customization/pixels/gwp.js": {
+      "files": [
+        "scripts/customization/pixels/goodway.js"
+      ]
+    },
+    "customization/pixels/cep.js": {
+      "files": [
+        "scripts/customization/pixels/crazyegg.js"
+      ]
+    },
+    "customization/pixels/ad.js": {
+      "files": [
+        "scripts/customization/pixels/adroll.js"
+      ]
+    },
+    "customization/pixels/fb.js": {
+      "files": [
+        "scripts/customization/pixels/facebook.js"
+      ]
+    },
+    "customization/pixels/ga.js": {
+      "files": [
+        "scripts/customization/pixels/google.js"
+      ]
+    },
+    "customization/widgets/wab.js": {
+      "files": [
+        "scripts/customization/widgets/whatsapp-banner.js"
+      ]
+    },
+    "customization/widgets/cw.js": {
+      "files": [
+        "scripts/customization/widgets/chat-widget.js"
+      ]
+    },
+    "customization/widgets/caf.js": {
+      "files": [
+        "scripts/customization/widgets/career-application-form.js"
+      ]
+    },
+    "customization/widgets/prf.js": {
+      "files": [
+        "scripts/customization/widgets/password-reset-form.js"
+      ]
+    },
+    "customization/widgets/prrf.js": {
+      "files": [
+        "scripts/customization/widgets/password-reset-request-form.js"
+      ]
+    },
+    "customization/widgets/esrf.js": {
+      "files": [
+        "scripts/customization/widgets/email-support-request-form.js"
+      ]
+    },
+    "customization/widgets/drf.js": {
+      "files": [
+        "scripts/customization/widgets/demo-request-form.js"
+      ]
+    },
+    "customization/widgets/zdrf.js": {
+      "files": [
+        "scripts/customization/widgets/zoho-demo-request-form.js"
+      ]
+    },
+    "customization/widgets/brrf.js": {
+      "files": [
+        "scripts/customization/widgets/business-rate-request-form.js"
+      ]
+    },
+    "customization/widgets/nf.js": {
+      "files": [
+        "scripts/customization/widgets/newsletter-form.js"
+      ]
+    },
+    "customization/widgets/brt.js": {
+      "files": [
+        "scripts/customization/widgets/business-rates-table.js"
+      ]
+    },
+    "customization/widgets/rt.js": {
+      "files": [
+        "scripts/customization/widgets/rates-table.js"
+      ]
+    },
+    "customization/widgets/pt.js": {
+      "files": [
+        "scripts/customization/widgets/product-table.js"
+      ]
+    },
+    "customization/widgets/rc.js": {
+      "files": [
+        "scripts/customization/widgets/rates-continent.js"
+      ]
+    },
+    "customization/templates/tp.js": {
+      "files": [
+        "scripts/customization/templates/template-product.js"
+      ]
+    },
+    "customization/pages/main/panel-products.js": {
+      "files": [
+        "scripts/customization/pages/main/panel-products.js"
+      ]
+    },
+   	"customization/pages/main/panel-rates.js": {
+      "files": [
+        "scripts/customization/pages/main/panel-rates.js"
+      ]
+    },
+    "customization/pages/main/panel-app-demo.js": {
+      "files": [
+        "scripts/customization/pages/main/panel-app-demo.js"
+      ]
+    },
+    "customization/pages/main/panel-media-mentions.js": {
+      "files": [
+        "scripts/customization/pages/main/panel-media-mentions.js"
+      ]
+    },
+    "customization/pages/press/panel-images.js": {
+      "files": [
+        "scripts/customization/pages/press/panel-images.js"
+      ]
+    },
+    "fonts": {
+      "files": [
+        "fonts/**/*",
+        "../bower_components/flag-icon-css/flags*/**/*"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://192.168.2.74/main-site"
+  }
+}

@@ -1,0 +1,355 @@
+/**
+*
+*	KnowRoaming Button Styles
+*	
+*	Author: KnowRoaming Ltd.
+*	Contributor:	Nitika .S
+*
+**/
+
+
+$btn-base-filled-border: none;
+$btn-border: 1px solid; /* Unique to ghost buttons */
+$btn-border-radius: rem(10);
+$btn-color: $white; /* Unique to regular buttons */
+$btn-cursor: pointer;
+$btn-disabled-cursor: not-allowed; /* Unique to diabled buttons */
+$btn-display: inline-block;
+$btn-min-width: rem(10);
+$btn-padding: rem(1) rem(3);
+$btn-text-align: center;
+$btn-text-transform: uppercase;
+$btn-transition: all 0.3s ease 0s;
+
+
+/* btn Base (Filled) */
+@mixin btn-base-filled() {
+	border: $btn-base-filled-border;
+	border-radius: $btn-border-radius;
+	cursor: $btn-cursor;
+	color: $btn-color;
+	display: $btn-display;
+	font-size: rem(1.4);
+	min-width: $btn-min-width;
+	padding: $btn-padding;
+	text-align: $btn-text-align;
+	text-transform: $btn-text-transform;
+	transition: $btn-transition;
+	
+	&:hover, 
+	&:focus {
+		cursor: $btn-cursor;
+		color: $btn-color;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
+/* btn Base (Ghost) */
+@mixin btn-base-ghost() {
+	border: $btn-border;
+	border-radius: $btn-border-radius;
+	cursor: $btn-cursor;
+	display: $btn-display;
+	font-size: rem(1.4);
+	min-width: $btn-min-width;
+	padding: $btn-padding;
+	text-align: $btn-text-align;
+	text-transform: $btn-text-transform;
+	transition: $btn-transition;
+}
+
+@mixin btn-icon($icon) {
+	&:before {
+		@include fontawesome-icon($icon);
+		margin-right: rem(1);
+	}
+}
+
+/* Primary btn */
+.btn-primary {
+	@include btn-base-filled();
+	background-color: $primary;
+
+	&:hover {
+		background-color: $hover-primary;
+	}
+}
+
+.btn-ghost-primary {
+	@include btn-base-ghost();
+	border-color: $primary; 
+	color: $primary;
+
+	&:hover {
+		border-color: $hover-primary;
+		color: $hover-primary;
+	}
+}
+
+
+/* Secondary btn */
+.btn-secondary { 
+	@include btn-base-filled();
+	background-color: $secondary;
+	
+	&:hover {
+		background-color: $hover-secondary;
+	}
+}
+
+.btn-ghost-secondary {
+	@include btn-base-ghost();
+	border-color: $secondary; 
+	color: $secondary;
+	
+	&:hover {
+		border-color: $hover-secondary;
+		color: $hover-secondary;
+	}
+}
+
+
+/* Tertiary btn */
+.btn-tertiary {
+	@include btn-base-filled();
+	background-color: $tertiary;
+	
+	&:hover {
+		background-color: $hover-tertiary;
+	}
+}
+
+.btn-ghost-tertiary {
+	@include btn-base-ghost();
+	border-color: $tertiary; 
+	color: $tertiary;
+
+	&:hover {
+		border-color: $hover-tertiary;
+		color: $hover-tertiary;
+	}
+}
+
+
+/* Quaternary btn */
+.btn-quaternary {
+	@include btn-base-filled();
+	background-color: $quaternary;
+	
+	&:hover {
+		background-color: $hover-quaternary;
+	}
+}
+
+.btn-ghost-quaternary {
+	@include btn-base-ghost();
+	border-color: $quaternary; 
+	color: $quaternary;
+
+	&:hover {
+		border-color: $hover-quaternary;
+		color: $hover-quaternary;
+	}
+}
+
+
+/* Warning/Error btn */
+.btn-warning { 
+	@include btn-base-filled();
+	background-color: $warning;
+	
+	&:hover {
+		background-color: $hover-warning;
+	}
+}
+
+.btn-ghost-warning {
+	@include btn-base-ghost();
+	border-color: $warning; 
+	color: $warning;
+	
+	&:hover {
+		border-color: $hover-warning;
+		color: $hover-warning;
+	}
+}
+
+.btn-error {
+	@include btn-base-filled();
+	background-color: $error;
+	
+	&:hover {
+		background-color: $hover-error;
+	}
+}
+
+.btn-ghost-error {
+	@include btn-base-ghost();
+	border-color: $error; 
+	color: $error;
+	
+	&:hover {
+		border-color: $hover-error;
+		color: $hover-error;
+	}
+}
+
+
+/* Success btn */
+.btn-success { 
+	@include btn-base-filled();
+	background-color: $success;
+	
+	&:hover {
+		background-color: $hover-success;
+	}
+	
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.btn-ghost-success {
+	@include btn-base-ghost();
+	border-color: $success; 
+	color: $success;
+
+	&:hover {
+		border-color: $hover-success;
+		color: $hover-success;
+	}
+}
+
+/* Shaded btn */
+.btn-shaded {
+	@include btn-base-filled();
+	background-color: $shaded;
+	color: $white;
+
+	&:hover {
+		background-color: $hover-shaded;
+	}
+}
+
+.btn-ghost-shaded {
+	@include btn-base-filled();
+	background-color: $light-grey-alternate;
+	color: $white;
+
+	&:hover {
+		border-color: $hover-shaded;
+		background-color: $hover-shaded;
+	}
+}
+
+
+/* Disabled btn */
+.btn.disabled,
+.btn-disabled {
+	@include btn-base-filled();
+	background-color: $disabled;
+	
+	&:hover {
+		background-color: $disabled;
+		cursor: $btn-disabled-cursor;
+	}
+}
+
+.btn-ghost-disabled {
+	@include btn-base-ghost();
+	border-color: $disabled; 
+	color: $disabled;
+	
+	&:hover {
+		border-color: $hover-disabled;
+		color: $hover-disabled;
+		cursor: $btn-disabled-cursor;
+	}
+}
+
+.btn-download {
+	@include btn-icon($icon-download);
+}
+
+.btn-long-arrow {
+	@include btn-icon('\f177');
+}
+
+.btn-caret-left {
+	@include btn-icon($icon-caret-left);
+}
+
+
+.btn.btn-thin {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.btn.btn-wide {
+	padding-left: rem(6);
+	padding-right: rem(6);
+}
+
+.btn.disabled {
+	cursor: disabled;
+}
+
+.btn.btn-animate {
+
+	&:before {
+		content: none;
+		margin-right: rem(0.4);
+		display: inline-block;
+		animation: fa-spin 2s infinite linear;
+	}
+
+	&.loading {
+
+		&:before {
+			@include fontawesome-icon('\f1ce');
+			animation: fa-spin 2s infinite linear;
+		}
+	}
+
+	&.success {
+
+		&:before {
+			animation: none;	
+			@include fontawesome-icon('\f00c');		
+		}
+	}
+
+	&.failure {
+
+		&:before {
+			animation: none;	
+			@include fontawesome-icon('\f00d');		
+		}
+	}
+}
+
+.btn.normal {
+	min-width: auto;
+	padding: rem(0.4);
+	@include border-radius(5%);
+}
+
+.btn.sm {
+	min-width: auto;
+	padding: rem(0);
+	@include border-radius(5%);
+}
+
+.btn.full-width {
+	width: 100%;
+}
+
+.btn.btn-order {
+	@extend .btn-quaternary;
+
+	&:focus {
+		outline: 0;
+		box-shadow: none;
+	}
+}

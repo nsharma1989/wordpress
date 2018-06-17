@@ -1,0 +1,29 @@
+.widget_zoho-demo-request-form {
+
+	.submission-message {
+		padding: rem(2);
+		margin-bottom: rem(2);
+	}
+
+	form {
+
+		#captcha-image {
+			float: left;
+			max-width: 80%;
+			max-height: rem(5.8);
+			margin-right: rem(1);
+			border: 1px solid $grey;
+
+			& + a {
+				float: left;
+				@extend .icon-refresh;
+				font-size: rem(1.8);
+				margin-top: rem(2);
+			}
+		}
+
+		button[type="submit"] {
+			margin-right: rem(1);
+		}
+	}
+}

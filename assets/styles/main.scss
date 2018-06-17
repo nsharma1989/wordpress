@@ -1,0 +1,193 @@
+/**
+*
+*	KnowRoaming Main SASS Template
+*	
+*	Author: KnowRoaming Ltd.
+*	Contributor:	Nitika .S
+*
+**/
+@import "compass";
+
+
+@import "common/function";
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/select2/src/scss/core.scss";
+@import "../../bower_components/flag-icon-css/sass/_flag-icon.scss";
+// endbower
+
+@import "common/mixin";
+@import "common/fonts";
+
+@import "common/global";
+@import "components/icons";
+@import "components/buttons";
+@import "components/links";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "components/select2";
+@import "components/badge";
+
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+// Partials 
+@import "templates/partials/title";
+@import "templates/partials/byline";
+@import "templates/partials/post-title";
+@import "templates/partials/post-category";
+@import "templates/partials/post-summary";
+@import "templates/partials/post-date";
+@import "templates/partials/post-image";
+@import "templates/partials/comment-count";
+@import "templates/partials/post-tags";
+@import "templates/partials/post-archive-header";
+@import "templates/partials/post-listing";
+@import "templates/partials/post-navigation";
+@import "templates/partials/post-footer";
+@import "templates/partials/post-search-form";
+
+// Customized styles
+@import "templates/customization/material";
+@import "templates/customization/header/header-link-menu";
+@import "templates/customization/components/form";
+@import "templates/customization/components/form-alternate";
+@import "templates/customization/components/alert";
+@import "templates/customization/widgets/social-share-slider";
+@import "templates/customization/widgets/media-mentions-slider";
+@import "templates/customization/widgets/faqlist";
+@import "templates/customization/widgets/rates-continent";
+@import "templates/customization/widgets/whatsapp-banner";
+@import "templates/customization/widgets/chat-widget";
+@import "templates/customization/widgets/press-releases";
+@import "templates/customization/widgets/press-image";
+@import "templates/customization/widgets/press-team";
+@import "templates/customization/widgets/career-contact";
+@import "templates/customization/widgets/career-application-form";
+@import "templates/customization/widgets/career-position-summary";
+@import "templates/customization/widgets/password-reset-request-form";
+@import "templates/customization/widgets/password-reset-form";
+@import "templates/customization/widgets/email-support-request-form";
+@import "templates/customization/widgets/business-rates-table";
+@import "templates/customization/widgets/business-rates-request-form";
+@import "templates/customization/widgets/product-table";
+@import "templates/customization/widgets/rates-table";
+@import "templates/customization/widgets/newsletter-form";
+@import "templates/customization/widgets/newsletter-widget";
+@import "templates/customization/widgets/about-widget";
+@import "templates/customization/widgets/social-widget";
+@import "templates/customization/widgets/instagram-widget";
+@import "templates/customization/widgets/posts-widget";
+@import "templates/customization/widgets/category-widget";
+@import "templates/customization/widgets/blog-post-slider";
+@import "templates/customization/widgets/blog-post-share";
+@import "templates/customization/widgets/blog-post-actions";
+@import "templates/customization/widgets/blog-author-box";
+@import "templates/customization/widgets/blog-related-posts";
+@import "templates/customization/widgets/zoho-demo-request-form";
+
+// Post types
+@import "templates/customization/post-types/careers/content-single";
+@import "templates/customization/post-types/post/content";
+@import "templates/customization/post-types/post/content-single";
+@import "templates/customization/post-types/post/content-extended";
+@import "templates/customization/post-types/post/entry-meta-extended";
+@import "templates/customization/post-types/post/entry-header-extended";
+@import "templates/customization/post-types/post/entry-footer-extended";
+@import "templates/customization/post-types/post/sidebar";
+@import "templates/customization/post-types/post/archive";
+@import "templates/customization/post-types/post/search";
+
+// Templates
+@import "template-home";
+@import "template-product";
+@import "template-no-content";
+
+// 404 Page
+@import "pages/404/404";
+
+// Page specific styles
+@import "pages/main/main";
+@import "pages/main/panel-intro";
+@import "pages/main/panel-intro-lte";
+@import "pages/main/panel-intro-hk-sg";
+@import "pages/main/panel-products";
+@import "pages/main/panel-testimonial";
+@import "pages/main/panel-rates";
+@import "pages/main/panel-app-demo";
+@import "pages/main/panel-faq";
+@import "pages/main/panel-media-mentions";
+@import "pages/main/panel-newsletter";
+@import "pages/main/panel-contact-us";
+
+@import "pages/about-us/panel-intro";
+@import "pages/about-us/panel-telna";
+@import "pages/about-us/panel-products";
+
+@import "pages/press/panel-intro";
+@import "pages/press/panel-releases";
+@import "pages/press/panel-media-mentions";
+@import "pages/press/panel-images";
+@import "pages/press/panel-contact";
+
+@import "pages/iot/iot";
+@import "pages/iot/panel-intro";
+@import "pages/iot/panel-overview";
+@import "pages/iot/panel-features";
+@import "pages/iot/panel-demo";
+@import "pages/iot/panel-contact";
+
+@import "pages/softsim/softsim";
+@import "pages/softsim/panel-intro";
+@import "pages/softsim/panel-overview";
+@import "pages/softsim/panel-features";
+@import "pages/softsim/panel-demo";
+@import "pages/softsim/panel-contact";
+
+@import "pages/careers/careers";
+@import "pages/careers/panel-intro";
+@import "pages/careers/panel-about";
+@import "pages/careers/panel-benefits";
+@import "pages/careers/panel-contact";
+@import "pages/careers/panel-location";
+
+@import "pages/business/business";
+@import "pages/business/main/panel-intro";
+@import "pages/business/main/panel-features";
+@import "pages/business/main/panel-products";
+@import "pages/business/main/panel-partnership";
+@import "pages/business/main/panel-demo";
+@import "pages/business/about-us/panel-intro";
+@import "pages/business/rates/panel-intro";
+@import "pages/business/rates/panel-rates";
+@import "pages/business/products/panel-intro";
+@import "pages/business/products/panel-products";
+@import "pages/business/support/panel-intro";
+@import "pages/business/support/panel-support";
+@import "pages/business/support/panel-contact";
+
+// Virgin Australia Page
+@import "pages/virgin-australia/virgin-australia";
+@import "pages/virgin-australia/panel-intro";
+@import "pages/virgin-australia/panel-demo";
+@import "pages/virgin-australia/panel-compatibility";
+@import "pages/virgin-australia/panel-rates";
+
+// Blog pages
+@import "pages/blog/blog";
+@import "pages/password/password";
+@import "pages/password/reset";
+@import "pages/redirect-html/redirect-html";
+@import "pages/fair-usage-policy/fair-usage-policy";
+@import "pages/terms-and-conditions/terms-and-conditions";
+@import "pages/rates-and-supported-countries";
+@import "pages/lte-supported-countries";
